@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="./public/css/materialize-css/materialize.min.css" media="screen,projection"
+    />
+    <link type="text/css" rel="stylesheet" href="./public/css/tcc-css/style.css" media="screen,projection" />
+    <script type="text/javascript" src="./public/js/tcc-js/script-index.js"></script>
+    <script type="text/javascript" src="./public/js/jquery-js/jquery-3.3.1.min.js"></script>
+    <title>TCC - NUTRI</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar-fixed">
+        <nav class="navbar-fixed_">
+            <div class="container ">
+                <div class="nav-wrapper ">
+                    <a href="#" class="brand-logo navbar-a_ ">
+                        <img id="logo" class="navbar-img-fixed_" src="./public/img/imagem1.jpg" alt="" srcset="">
+                    </a>
+                    <ul id="nav-mobile" class=" right hide-on-med-and-down ">
+                        <li>
+                            <a onclick="Verify(this.id)" class="navbar-a_ navbar-a-active_" href="#" id="chome">HOME</a>
+                        </li>
+                        <li>
+                            <a onclick="Verify(this.id)" class="navbar-a_ navbar-ahover_" href="#" id="creceitas">RECEITAS</a>
+                        </li>
+                        <li>
+                            <a onclick="Verify(this.id)" class="navbar-a_ navbar-ahover_" href="#" id="cdicas">DICAS</a>
+                        </li>
+                        <li>
+                            <a onclick="Verify(this.id)" class="navbar-a_ navbar-ahover_" href="#" id="cnutricionista">NUTRICIONISTA</a>
+                        </li>
+                        <li>
+                            <a onclick="Verify(this.id)" class="navbar-a_ navbar-ahover_" href="#last" id="ceventos">EVENTOS</a>
+                        </li>
+                        <li>
+                            <a onclick="Verify(this.id)" class="navbar-a_ navbar-ahover_" href="#" id="cfaq">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- FIM NAVBAR -->
+
+    <!-- INÍCIO DA PÁGINA  -->
+    <div class="container">
+        <div class="row">
+            <div class="row"></div>
+            <div class="carousel carousel-slider">
+                <a class="carousel-item" href="#one!">
+                    <img src="./public/img/imagem1.jpg">
+                </a>
+                <a class="carousel-item" href="#two!">
+                    <img src="./public/img/imagem1.jpg">
+                </a>
+                <a class="carousel-item" href="#three!">
+                    <img src="./public/img/imagem1.jpg">
+                </a>
+                <a class="carousel-item" href="#four!">
+                    <img src="./public/img/imagem1.jpg" width="300px" height="300px">
+                </a>
+            </div>
+        </div>
+    </div>    
+    <!-- FIM DA PAGINA -->
+
+    <!-- INÍCIO FOOTER -->
+    <footer class="page-footer footer-color1_">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">O Site</h5>
+                    <p class="grey-text text-lighten-4">Esse site é exclusivamente feito para o nosso Trabalho de Conclusão de Curso da escola ETEC Euro Albino
+                        de Souza</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Criadores</h5>
+                    <ul>
+                        <li class="grey-text text-lighten-3">
+                            Adryane Aparecida de Carvalho
+                        </li>
+                        <li class="grey-text text-lighten-3">
+                            Bruno Henrique Luciano Rodrigues
+                        </li>
+                        <li class="grey-text text-lighten-3">
+                            Inara Aparecida da Silva Valim
+                        </li>
+                        <li class="grey-text text-lighten-3">
+                            Paulo Henrique Melo da Silva
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright footer-color2_">
+            <div id="last" class="container">
+                © 2018 TCC NUTRI
+                <a class="white-text right" href="#!">Mais informações</a>
+            </div>
+        </div>
+    </footer>
+    <!-- FIM FOOTER -->
+    <script type="text/javascript" src="./public/js/materialize-js/materialize.min.js"></script>
+    <script>
+        M.AutoInit();
+        var instance = M.Carousel.init({
+            fullWidth: true
+        });
+
+        $(document).on("scroll", function () {
+            if ($(document).scrollTop() > 450) { //QUANDO O SCROLL PASSAR DOS 100px DO TOPO
+                $("nav").removeClass("navbar-fixed_").addClass("navbar-scroll_"); //TROCA P CLASSE ROLLED
+                $("#logo").removeClass("navbar-img-fixed_").addClass("navbar-img-scroll_");
+            } else {
+                $("nav").removeClass("navbar-scroll_").addClass("navbar-fixed_"); //VOLTA P MENU GRANDE ORIGINAL
+                $("#logo").removeClass("navbar-img-scroll_").addClass("navbar-img-fixed_");
+            }
+        });
+    </script>
+</body>
+
+</html>

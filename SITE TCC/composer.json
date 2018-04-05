@@ -1,0 +1,15 @@
+{
+    "name": "tcc/project",
+    "authors": [
+        {
+            "name": "tccnutri",
+            "email": "tcc.etec2018.nutri@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Project\\" : "app"
+        }
+    }
+}
