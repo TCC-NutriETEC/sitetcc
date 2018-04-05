@@ -1,2 +1,3 @@
-# sitetcc
+# SITE TCC - ETEC EURO ALBINO DE SOUZA 2018 - ETIM INFORMÁTICA
 Site de um TCC sobre nutrição
+HTML, CSS, JS
